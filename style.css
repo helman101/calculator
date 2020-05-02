@@ -1,0 +1,133 @@
+:root{
+    --gray: #6C807F;
+    --ligth-marine: #D9FFFD;
+    --darker-blue: #46807D;
+    --marine: #8CFFF9;
+    --blue: #70CCC7;
+    --dark-blue: rgb(71, 153, 149);
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    
+}
+
+html {
+
+    background-color: var(--gray);
+}
+
+#content {
+    
+    margin: 30px 38vw 30px 38vw;
+    padding: 1%;
+    border-radius: 10px;
+    border: solid var(--darker-blue) 3px;
+    background-color: var(--dark-blue);
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.253);
+    
+}
+
+#title {
+
+    margin: 30px;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.5rem;
+    padding: 5px;
+    
+}
+
+#cal-grid {
+
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    grid-template-rows: repeat(6, 60px);
+    grid-gap: 5px;
+    
+}
+
+#cal-section {
+
+    margin: auto 5px auto 5px ;
+
+}
+
+#calculator {
+
+    margin: auto;
+    padding: 5px;
+}
+
+
+#screen {
+
+    grid-area: 1/1/2/5;
+    padding: 10px;
+    text-align: end;
+    font-size: 2.2em;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: lighter;
+    background-color: var(--ligth-marine);
+    border: solid var(--darker-blue) 3px;
+    max-width: 255px;
+    max-height: 60px;
+    
+} 
+
+.btn-num {
+
+    border: solid var(--darker-blue) 3px;
+    background-color: var(--blue);
+    font-size: 2rem;
+    border-radius: 5px;
+    color: black;
+}
+
+.btn-ope {
+
+    border: solid var(--darker-blue) 3px;
+    background-color: var(--marine);
+    font-size: 2rem;
+    border-radius: 5px;
+    color: black;
+}
+
+.other {
+
+    border: solid var(--darker-blue) 3px;
+    background-color: var(--marine);
+    font-size: 2rem;
+    border-radius: 5px;
+    color: black;
+}
+
+
+
+.btn-num:hover {
+
+    transition: 0.7s ease;
+    background-color: rgb(145, 218, 214);
+    font-size: 2.1rem;
+}
+
+.btn-ope:hover {
+
+    transition: 0.7s ease;
+    background-color: rgb(88, 247, 239);
+    font-size: 2.1rem;
+}
+
+.other:hover {
+
+    transition: 0.7s ease;
+    background-color: rgb(88, 247, 239);
+    font-size: 2.1rem;
+}
+
+#zero {
+
+    grid-area: 5/1/6/4;
+}
