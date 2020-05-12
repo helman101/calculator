@@ -6,37 +6,52 @@
         <title>Calculator</title>
     </head>
     <body>
-        <header id="title">
-            <h1>Calculator</h1>
-        </header>
-        <section id="content">
-            
+        <section id="content">           
             <section id="cal-section">
-                <div id="calculator">
+                <div id="calculator"></div>
                     <div id="cal-grid">
                         <h3 id="screen"></h3>
-                        <button id="one" value="1" class="btn-num">1</button>
-                        <button id="two" value="2" class="btn-num">2</button>
-                        <button id="three" value="3" class="btn-num">3</button>
-                        <button id="add" value="add" class="btn-ope">+</button>
-                        <button id="four" value="4" class="btn-num">4</button>
-                        <button id="five" value="5" class="btn-num">5</button>
-                        <button id="six" value="6" class="btn-num">6</button>
-                        <button id="subtract" value="subtract" class="btn-ope">-</button>
-                        <button id="seven" value="7" class="btn-num">7</button>
-                        <button id="eight" value="8" class="btn-num">8</button>
-                        <button id="nine" value="9" class="btn-num">9</button>
-                        <button id="multiply" value="multiply" class="btn-ope">*</button>
-                        <button id="divide" value="divide" class="btn-ope">/</button>
-                        <button id="clear"  class="other">C</button>
-                        <button id="dot" value="." class="other">.</button>
-                        <button id="zero" value="0" class="btn-num">0</button>
-                        <button id="undo"  class="other">U</button>
-                        <button id="equal" value="equal" class="other">=</button>
+                        <button id="one" value="1" data-key="97" class="btn-num">1</button>
+                        <button id="two" value="2" data-key="98" class="btn-num">2</button>
+                        <button id="three" value="3" data-key="99" class="btn-num">3</button>
+                        <button id="add" value="add" data-key="107" class="btn-ope">+</button>
+                        <button id="clear"  data-key="67" >C</button>
+                        <button id="four" value="4" data-key="100" class="btn-num">4</button>
+                        <button id="five" value="5" data-key="101" class="btn-num">5</button>
+                        <button id="six" value="6" data-key="102" class="btn-num">6</button>
+                        <button id="subtract" value="subtract" data-key="109" class="btn-ope">-</button>
+                        <button id="undo"  data-key="8" class="other">U</button>
+                        <button id="seven" value="7" data-key="103" class="btn-num">7</button>
+                        <button id="eight" value="8" data-key="104" class="btn-num">8</button>
+                        <button id="nine" value="9" data-key="105" class="btn-num">9</button>
+                        <button id="multiply" value="multiply" data-key="106" class="btn-ope">*</button>  
+                        <button id="dot" value="." data-key="110" class="other">.</button>
+                        <button id="zero" value="0" data-key="96" class="btn-num">0</button>
+                        <button id="divide" value="divide" data-key="111" class="btn-ope">/</button>
+                        <button id="equal" value="equal" data-key="13" class="other">=</button>
                     </div>
                 </div>
             </section>
         </section>
+        <footer>
+            <section id="contact">
+                <div id="end">
+                    <h3>Do you like my work?!</h3>
+                    <p>Contact me!</p>
+                </div>
+                <div id="contact_link">
+                    <a id="profile-link" href="https://github.com/helman101/" target="_blank">
+                    <img class="contact_img" 
+                    src="https://i0.wp.com/www.inferencelab.com/wp-content/uploads/github-bb449e0ffbacbcb7f9c703db85b1cf0b.png?fit=1125%2C417"
+                    alt="github_logo">
+                    </a>
+                    <a href="https://codepen.io/helman101" target="_blank">
+                    <img class="contact_img" 
+                    src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png"
+                    alt="code pen logo">
+                    </a>
+            </section>
+        </footer>
     </body>
     <script src="calculator.js"></script>
 </html>

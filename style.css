@@ -21,7 +21,7 @@ html {
 
 #content {
     
-    margin: 30px 38vw 30px 38vw;
+    margin: 20px 34vw 10px 35vw;
     padding: 1%;
     border-radius: 10px;
     border: solid var(--darker-blue) 3px;
@@ -43,10 +43,9 @@ html {
 #cal-grid {
 
     display: grid;
-    grid-template-columns: repeat(4, 60px);
-    grid-template-rows: repeat(6, 60px);
+    grid-template-columns: repeat(5, 70px);
+    grid-template-rows: repeat(5, 70px);
     grid-gap: 5px;
-    
 }
 
 #cal-section {
@@ -64,16 +63,13 @@ html {
 
 #screen {
 
-    grid-area: 1/1/2/5;
-    padding: 10px;
+    grid-area: 1/1/2/6;
+    padding: 12px;
     text-align: end;
-    font-size: 2.2em;
-    font-family: 'Source Code Pro', monospace;
-    font-weight: lighter;
+    font-size: 1.7em;
+    font-family: 'Press Start 2P', cursive;
     background-color: var(--ligth-marine);
     border: solid var(--darker-blue) 3px;
-    max-width: 255px;
-    max-height: 60px;
     
 } 
 
@@ -108,26 +104,88 @@ html {
 
 .btn-num:hover {
 
-    transition: 0.7s ease;
-    background-color: rgb(145, 218, 214);
+    transition: 0.3s ease;
+    background-color: rgb(177, 255, 251);
     font-size: 2.1rem;
 }
 
 .btn-ope:hover {
 
-    transition: 0.7s ease;
-    background-color: rgb(88, 247, 239);
+    transition: 0.3s ease;
+    background-color: rgb(0, 153, 255);
     font-size: 2.1rem;
 }
 
 .other:hover {
 
-    transition: 0.7s ease;
-    background-color: rgb(88, 247, 239);
+    transition: 0.3s ease;
+    background-color: rgb(0, 153, 255);
     font-size: 2.1rem;
 }
 
 #zero {
 
     grid-area: 5/1/6/4;
+}
+
+#clear {
+    background: linear-gradient(rgb(255, 68, 68), rgb(255, 173, 173));
+    font-size: 2rem;
+    border-radius: 5px;
+    color: black;
+    border: solid var(--dark-blue) 3px;
+}
+
+#clear:hover {
+
+    background: linear-gradient(rgb(252, 31, 31), rgb(255, 117, 117));
+}
+
+#contact {
+
+    margin-top: 30px;
+    color: #1C191C;
+    background-color: var(--dark-blue);
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    height: 77px;
+    box-shadow: 0px 0px 3px 3px rgba(34, 34, 34, 0.438);
+    
+}
+
+#end {
+
+    text-align: center;
+    margin: auto;
+}
+
+#contact_link {
+
+    display: flex;
+    margin-right: 40vh;
+
+}
+
+.contact_img {
+
+    max-height: 60px;
+    margin: auto 30px auto 30px;
+    transition: 1s;
+}
+
+p {
+
+    font-weight: bold;
+    color: var(--marine);
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contact_img:hover {
+
+    padding-top: 10px;
+    transition: 0.3s ease-in;
+    
 }
